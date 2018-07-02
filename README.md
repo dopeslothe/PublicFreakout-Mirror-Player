@@ -20,13 +20,6 @@
 
 </head>
 <body>
-
-  <script type="text/javascript">
-    var mirror = decodeURI(getQueryVariable("url"));
-    document.querySelector("#videoPlayer > source").src = mirror;
-    alert(mirror);
-    
-  </script>
     
   <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="none" width="640" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
     <source id="mp4source" src="" type="video/mp4">
@@ -36,5 +29,13 @@
   </video>
 
 </body>
+
+
+  <script type="text/javascript">
+    var mirror = decodeURI(getQueryVariable("url"));
+    document.querySelector("#videoPlayer > source").src = mirror;
+    alert(mirror);
+    
+  </script>
 
 </html>
