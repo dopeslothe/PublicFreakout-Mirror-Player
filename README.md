@@ -30,19 +30,10 @@
   </video>
 
   <script type="text/javascript">
-    $(document).ready(function () {
-        var mirror = getQueryVariable('url');
-        var player = document.getElementById('videoPlayer');
-        var mp4vid = document.getElementById('mp4source');
-        
-        player.pause();
-        $(mp4vid).attr('src', mirror);
-        player.load();
-        player.play();
+    var mirror = getQueryVariable("url");
+    document.querySelector("#videoPlayer > source").src = mirror;
     
-    });
-    
-</script>
+  </script>
 </body>
 
 </html>
