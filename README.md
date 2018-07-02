@@ -4,9 +4,9 @@
 <head>
 
     <title>Video.js | HTML5 Video Player</title>
-    <link href="http://vjs.zencdn.net/5.19/video-js.css" rel="stylesheet">
+    <link href="video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/ie8/1.1/videojs-ie8.min.js"></script>
-    <script src="http://vjs.zencdn.net/5.19/video.js"></script>
+    <script src="video.js"></script>
 
 </head>
 <body>
