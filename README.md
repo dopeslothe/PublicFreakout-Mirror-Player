@@ -5,7 +5,6 @@
 
     <title>Video.js | HTML5 Video Player</title>
     <link href="video-js.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/ie8/1.1/videojs-ie8.min.js"></script>
     <script src="video.js"></script>
 
 </head>
