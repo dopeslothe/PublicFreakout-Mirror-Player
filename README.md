@@ -30,7 +30,7 @@
   </video>
 
   <script type="text/javascript">
-    var mirror = getQueryVariable("url");
+    var mirror = decodeURI(getQueryVariable("url"));
     document.querySelector("#videoPlayer > source").src = mirror;
     alert(mirror);
     
