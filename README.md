@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+  <video id="pf_mirror" class="video-js vjs-default-skin" controls preload="none" width="1440" height="900" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
     <source src="https://my.mixtape.moe/cqaidu.mp4" type="video/mp4">
 <!--    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
     <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
@@ -20,7 +20,6 @@
     
     <!-- Tracks need an ending tag thanks to IE9 -->
 
-    <track kind="subtitles" src="../shared/example-captions.vtt" srclang="en" label="English"></track>
     <!-- Tracks need an ending tag thanks to IE9 -->
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
