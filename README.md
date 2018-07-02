@@ -44,16 +44,6 @@
     
     )
     
-    
-    var mirror = getQueryVariable("mirror_links");
-    
-    var video = document.getElementById('video');
-    var source = document.createElement('source');
-    
-    source.setAttribute('src'. mirror);
-    
-    video.appendChild(source);
-    
 </script>
 </body>
 
