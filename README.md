@@ -21,7 +21,30 @@
 </head>
 <body>
 
-<script type="text/javascript">
+    
+  <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="none" width="640" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
+    <source id="mp4source" src="" type="video/mp4">
+
+    <!-- Tracks need an ending tag thanks to IE9 -->
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        var mirror = getQueryVariable('url');
+        var player = document.getElementById('videoPlayer');
+        var mp4vid = document.getElementById('mp4source');
+        
+        player.pause();
+        $(mp4vid).attr('src', mirror);
+        player.load();
+        player.play();
+    
+    }
+    
+    )
+    
+    
     var mirror = getQueryVariable("mirror_links");
     
     var video = document.getElementById('video');
@@ -32,14 +55,6 @@
     video.appendChild(source);
     
 </script>
-    
-  <video id="video" class="video-js vjs-default-skin" controls preload="none" width="640" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
-    <source src="<p id='mirror_link'></p>" type="video/mp4">
-
-    <!-- Tracks need an ending tag thanks to IE9 -->
-    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-  </video>
-
 </body>
 
 </html>
