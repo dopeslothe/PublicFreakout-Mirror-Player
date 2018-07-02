@@ -21,12 +21,13 @@
 </head>
 <body>
 
-<script>
-    alert("URL variables detected: " + getQueryVariable("id"))
+<script type="text/javascript">
+    var mirror = getQueryVariable("mirror_links");
+    document.getElementById("mirror_link").innerHTML = mirror.toString();
 </script>
     
   <video id="pf_mirror" class="video-js vjs-default-skin" controls preload="none" width="640" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
-    <source src="https://my.mixtape.moe/cqaidu.mp4" type="video/mp4">
+    <source src="<p id='mirror_link'></p>" type="video/mp4">
 <!--    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
     <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
     <track kind="captions" src="../shared/example-captions.vtt" srclang="en" label="English"></track>
