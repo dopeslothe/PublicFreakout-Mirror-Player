@@ -32,6 +32,7 @@
   <script type="text/javascript">
     var mirror = getQueryVariable("url");
     document.querySelector("#videoPlayer > source").src = mirror;
+    alert(mirror);
     
   </script>
 </body>
