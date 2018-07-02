@@ -1,15 +1,17 @@
-function getQueryVariable(variable)
-{
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
-}
-
 <html lang="en">
+<script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+</script>
+
 <head>
 
     <title>Video.js | HTML5 Video Player</title>
@@ -19,8 +21,10 @@ function getQueryVariable(variable)
 </head>
 <body>
 
+<script>
     alert("URL variables detected: " + getQueryVariable("id"))
-
+</script>
+    
   <video id="pf_mirror" class="video-js vjs-default-skin" controls preload="none" width="640" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
     <source src="https://my.mixtape.moe/cqaidu.mp4" type="video/mp4">
 <!--    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
