@@ -40,9 +40,7 @@
         player.load();
         player.play();
     
-    }
-    
-    )
+    });
     
 </script>
 </body>
