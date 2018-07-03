@@ -33,7 +33,8 @@
 
   <script type="text/javascript">
     var mirror = decodeURIComponent(getQueryVariable("url"));
-    document.querySelector("#videoPlayer > source").src = mirror;    
+    document.querySelector("#videoPlayer > source").src = mirror;   
+    videojs('videoPlayer').play();
   </script>
 
 </html>
