@@ -21,7 +21,7 @@
 </head>
 <body>
     
-  <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="none" width="640" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
+  <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="none" width="80%" max-width="100%" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
     <source id="mp4source" src="" type="video/mp4">
 
     <!-- Tracks need an ending tag thanks to IE9 -->
