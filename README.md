@@ -21,10 +21,11 @@
 </head>
 <body>
     
-  <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="none" width="80%" max-width="100%" height="364" poster="https://i.imgur.com/0nepAeW.png" data-setup="{}">
+  <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="none" width="80%" max-width="100%" height="364" poster="https://i.imgur.com/0nepAeW.png">
     <source id="mp4source" src="" type="video/mp4">
 
     <!-- Tracks need an ending tag thanks to IE9 -->
+    
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video>
 
