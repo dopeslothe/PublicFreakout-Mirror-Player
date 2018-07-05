@@ -1390,4 +1390,9 @@ video::-webkit-media-text-track-display {
   width: 100%;
   height: 100%;
   border: none;
-  visibility: hidden; }
+  visibility: hidden;
+}
+/*below was added - an attempt to override jekyl midnight theme -  /u/mrhodesit*/
+.wrapper{
+  padding:0!important;
+}
